@@ -87,7 +87,7 @@ class wechatCallbackapiTest{
                 $stu_xq=$match[3];
                 $get_page=$match[4];
                 $next_xn=$stu_xn+1;
-                $url = "http://lightapp.weishao.com.cn/api/score/scoredata/find?xn=$stu_xn&xq=$stu_xq&schcode=ahpu&stucode=$stu_num";
+                //$url = "APIURL";
                 $curl=curl_init();
                 curl_setopt($curl,CURLOPT_URL,$url);
                 curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
